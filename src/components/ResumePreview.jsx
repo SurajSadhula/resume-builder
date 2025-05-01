@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import jsPDF from "jspdf";
-import styles from "./ResumeReview.module.css";
+import styles from "../styles/ResumeReview.module.css";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const ResumePreview = ({ resumeData }) => {
