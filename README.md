@@ -28,4 +28,4 @@ This project aims to bridge technology and career development, helping users cre
 ## ⚡ How to Run Locally
 1️⃣ Clone this repository:  
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/AI-Resume-Builder.git
+   git clone https://github.com/SurajSadhula/AI-Resume-Builder.git
