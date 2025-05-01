@@ -239,7 +239,7 @@ const ResumeForm = ({ onGenerateData, togglePreview }) => {
                   `workExperienceEntries.${index}.responsibilities`,
                   { required: "Responsibilities are required" }
                 )}
-                placeholder="Enter responsibilities separated with colon(;)"
+                placeholder="Enter responsibilities separated with semi-colon(;)"
                 className={styles.textarea}
               />
             </div>
