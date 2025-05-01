@@ -56,7 +56,6 @@ const ResumeForm = ({ onGenerateData, togglePreview }) => {
   });
 
   const submitHandler = (data) => {
-    
     console.log("form data - ", data);
     togglePreview();
     onGenerateData(data);
@@ -120,6 +119,11 @@ const ResumeForm = ({ onGenerateData, togglePreview }) => {
                   })}
                   className={styles.input}
                 />
+                {errors.workExperienceEntries?.[index]?.company && (
+                  <span className={styles.error}>
+                    {errors.workExperienceEntries[index].company.message}
+                  </span>
+                )}
               </div>
             </div>
             <div className={styles.formGroup}>
@@ -132,6 +136,11 @@ const ResumeForm = ({ onGenerateData, togglePreview }) => {
                 placeholder="Enter responsibilities separated with semi-colon(;)"
                 className={styles.textarea}
               />
+              {errors.workExperienceEntries?.[index]?.responsibilities && (
+                <span className={styles.error}>
+                  {errors.workExperienceEntries[index].responsibilities.message}
+                </span>
+              )}
             </div>
             {fields.length > 1 && (
               <div className={styles.addButtonContainer}>
